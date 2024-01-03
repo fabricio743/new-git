@@ -1,0 +1,92 @@
+html , body{
+    padding: 0px;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: max-content;
+    background-image: url(img/3e86cdd1-151a-48a2-a040-190569bb8a44.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 65, 100, 0.985);
+    text-align: center;
+    justify-content: center center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.44);
+}
+header > h1{
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.531);
+}
+main{   
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.732);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.27);
+}
+section > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+section > ul{
+    padding: 0%;
+    list-style: none;
+}
+section > ul > li > p{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.108);
+}
+section > ul > li > a{
+    color: rgb(0, 65, 100) ;
+    text-decoration: none;
+}
+section > ul > li > a:hover{
+    color: rgb(198, 40, 40);
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color:rgba(0, 37, 58, 0.922);
+} 
+footer > p{
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.063);
+}
+footer > p > a{
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    color: rgb(183, 21, 21);
+    text-decoration: none;
+}
+
+@media(max-width:400px){
+    section{
+        width: 340px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.732);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.27);
+    }
+}
