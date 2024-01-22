@@ -35,8 +35,9 @@ main{
 }
 section{
     width: 400px;
-    padding: 10px;
-    margin: 5px;
+    height: 700px;
+    padding: 40px;
+    margin: 25px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.776);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.27);
@@ -50,14 +51,17 @@ section > ul{
     padding: 0%;
     list-style: none;
 }
+section > ul > li{
+    margin: 30px;
+}
 section > ul > li > p{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.108);
 }
-section > ul > li > a{
+section > ul > li > p > a{
     color: rgb(0, 65, 100) ;
     text-decoration: none;
 }
-section > ul > li > a:hover{
+section > ul > li > p > a:hover{
     color: rgb(198, 40, 40);
     font-variant: small-caps;
     text-decoration: none;
@@ -84,7 +88,7 @@ footer > p > a:hover{
 
 @media(max-width:600px){
     section{
-        width: 340px;
+        width: 330px;
         padding: 10px;
         margin: 10px;
         text-align: center;
