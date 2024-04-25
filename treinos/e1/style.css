@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-flow: column;
+    width: 97vw;
+    height: 95vh;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 33, 20, 0.719);
+}
+h1{
+    color: white;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.grambox{
+    margin: 10px;
+}
+.grambox p{
+    font-size: 25px;
+    text-align: center;    
+}
+#box{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box:hover{
+    background-color: white;
+}
+.minibox{
+    display: inline;
+}
