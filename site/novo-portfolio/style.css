@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background: url(pexels-cottonbro-6804581.jpg) no-repeat;
+    background: url(pexels-oljamu-79787106-14303230.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -26,41 +26,40 @@ header > h1{
     color: white;
     font-variant: small-caps;
 }
-main{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 300px;
-    min-height: 85vh;
-    width: 100%;
-}
 #logo{
     width: 100px;
     border-radius: 50%;
     margin-left: 60px;
 }
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%;
+    height: 100%;
+}
 section{
     display: flex;
     flex-flow: column;
-    padding: 20px;
-    margin: 0px 0px 200px 0px;
-    max-width: 1600px;    
-    min-width: 300px;
+    width: 100%;
+    height: 98vh;
     align-items: center;
-    backdrop-filter: blur(5px) ;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.171);
 }
 section > h1{
-    color: white;
-    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 50%;
     padding: 10px;
     font-size: 28px;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
-    background-color: #352E46;
     text-align: center;
-    border-radius: 0px 30px 0px 0px;
+    border-radius: 15px;
 }
 
 .box{
@@ -68,62 +67,45 @@ section > h1{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    margin-top: 50px;
+    width: 80%;
+    padding: 10px;
+    background-color: rgba(206, 206, 206, 0.103);
+    backdrop-filter: blur(5px) ;
+    border-radius: 15px;
+    border: solid 2px black;
 }
 .box > a{
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 9px;    
+    padding: 10px;
     text-decoration: none;
     text-align: center;
-    font-size: 36px;
-    color: #51349B;
+    color: #000000;
 }
 .box > a:hover{
-    background-color: rgba(0, 0, 0, 0.116);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.226);
+    transition: 0.5s;
+    border-radius: 15px;
 }
-.box > a > p{
-
+.box > a > #minibox > p{
     margin: 20px 0px; 
-    font-size: 28px;
-    font-family: "Boogaloo", sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
 }
 
 #minibox{
-    background-color: rgb(143, 143, 143);
-    width: 300px;
+    background-color: rgba(228, 228, 228, 0.226);
+    width: 290px;
     height: 170px;
     border-radius: 5px;
-}
-#minibox1{
-    background: url(site-importancialeitura.png);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 170px;
-    border: solid 2px rgb(0, 0, 0);
-    border-radius: 5px;
-}
-#minibox1:hover{
-    transition: 4ms;
-    background-size: 110%;    
-}
-#minibox2{
-    background: url(site-curiosidades-danet.png);
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 170px;
-    border: solid 2px rgb(0, 0, 0);
-    border-radius: 5px;
-}
-#minibox2:hover{
-    transition: 4ms;
-    background-size: 110%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer{
     display: flex;
