@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Frank+Ruhl+Libre:wght@300..900&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -10,32 +11,39 @@ body{
     background-position: center center;
     background-attachment: fixed;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
+
+/*Parte1*/
 #info1{
     width: 100%;
     height: 100vh;
-    text-align: center;
+    text-align: center;    
+    background-color: rgba(245, 222, 179, 0.313);
 }
 #info1 > h1{
     display: flex;
+    height: 20vh;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    font-size: 3em;
+    font-size: 3.5em;
     font-variant: small-caps;
-    height: 10%;
     color: white;
     letter-spacing: 5px;
-    background-color: rgba(255, 89, 0, 0.706);
+    padding: 15px;
+    background-color: #F0903D;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.226);
 }
 #info1 > .org-inf{
-    height: 90%;
+    height: 85%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
 }
-#info1 > .org-inf > img{
+#info1 > .org-inf > a > img{
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -43,7 +51,179 @@ body{
 #info1 > .org-inf > p{
     width: 80%;
     padding: 13px;
-    margin-top: 1%;
-    background-color: rgba(255, 255, 255, 0.601);
-    border-radius: 1%;
+    margin-top: 3%;
+    background-color: rgba(255, 255, 255, 0.632);
+    border-radius: 10px;
+    text-shadow: 2px 2px rgba(126, 126, 126, 0.259);
+}
+/* Parte 1 pronta para celular*/
+@media (max-width: 700px)  {
+    #info1{
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;    
+        background-color: rgba(245, 222, 179, 0.313);
+    }
+    #info1 > .org-inf > a > img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 10%;
+    }
+    #info1 > .org-inf > p{
+        width: 90%;
+    }
+}
+
+/*Parte 2*/
+#anim2{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #1e574e7e;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    min-height: 100vh;
+}
+#anim2 > article{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+#anim2 > article > div{
+    height: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.727);    
+}
+#anim2 > article > div > ul{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.204);
+    width: 40%;
+    padding: 5px;
+}
+#anim2 > article > div > ul > li{
+    color: white;
+}
+#anim2 > article > button{
+    width: 34%;
+    padding: 4px;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-self: center;
+    background-color: rgba(245, 222, 179, 0.735);
+}
+#anim2 > article > button:hover{
+    background-color: rgba(0, 0, 0, 0.648);
+}
+#anim2 > article > button > a{
+    color: black;
+    text-decoration: none;
+}
+#anim2 > article > button > a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*Versão para celular*/
+@media (max-width: 700px) {
+    #anim2{
+        padding: 3% 0%;
+    }
+    #anim2 > article{
+        width: 200px;
+        height: 450px;
+    }
+    #anim2 > article > div > ul{
+        width: 70%;
+    }
+    #anim2 > article > button{
+        width: 90%;
+    }
+}
+
+#dog1{
+    background: url(../img/boxer.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#dog2{
+    background: url(../img/Buldogue.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#dog3{
+    background: url(../img/labrador-es.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#dog4{
+    background: url(../img/labrador.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#dog5{
+    background: url(../img/pastoralemao.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#dog6{
+    background: url(../img/pitbull.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#dog7{
+    background: url(../img/pug.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#dog8{
+    background: url(../img/Rottweiler.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#maps3{
+    background-color: rgba(255, 255, 255, 0.26);
+    display: flex;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+#maps3 > .mapa{
+    width: 700px;
+}
+#maps3 > article{
+    width: 50%;
+    text-align: center;
+}
+#maps3 > article > p{
+    color: white;
+    font-size: 1.3em;
+    font-family: "Concert One", sans-serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.259);
+}
+@media (max-width:1200px) {
+    #maps3{
+        display: flex;
+        flex-flow: column;
+        padding: 15px 0px;
+    }
+    #maps3 > .mapa{
+        width: 100%;
+        height: 250px;
+    }
+    #maps3 > article{
+        width: 100%;
+        text-align: center;
+    }
 }
