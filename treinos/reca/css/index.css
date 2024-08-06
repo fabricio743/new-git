@@ -226,10 +226,6 @@ body{
         flex-flow: column;
         padding: 15px 0px;
     }
-    #maps3 > .mapa{
-        width: 100%;
-        height: 250px;
-    }
     #maps3 > article{
         width: 100%;
         margin: 30px;
