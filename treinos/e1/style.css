@@ -5,7 +5,6 @@
 body{
     display: flex;
     flex-flow: column;
-    width: 97vw;
     height: 95vh;
     padding: 30px;
     justify-content: center;
