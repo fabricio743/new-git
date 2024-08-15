@@ -1,5 +1,5 @@
 
-    var x = window.document.querySelector('div.forme')
+    var x = window.document.querySelector('.forme')
 
 function clicado(){
     x.style.display = 'none'

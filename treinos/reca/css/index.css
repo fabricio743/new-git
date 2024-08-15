@@ -59,13 +59,14 @@ body{
     margin-top: 2%;
     background-color: rgba(255, 255, 255, 0.632);
     border-radius: 15px 15px 0px 15px;
-    text-shadow: 2px 2px rgba(126, 126, 126, 0.259);
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.119);
     font-family: "PT Sans Narrow", sans-serif;
-    font-weight: 520;
+    font-weight: 320;
+    font-size: 28px;
 
 }
 /* Parte 1 pronta para celular*/
-@media (max-width: 700px)  {
+@media (max-width: 850px)  {
     #info1{
         width: 100%;
         min-height: 100vh;
@@ -195,11 +196,13 @@ body{
 
 /*Aqui é a parte da interatividade do forme*/
 
-#anim2 > .forme{
+.forme{
     background-color: rgba(255, 255, 255, 0.952);
-    position: absolute;
+    position: fixed;
     width: 80%;
     height: 80%;
+    left: 10%;
+    top: 10%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -208,7 +211,7 @@ body{
     display: none;
 } 
 /*Botão para fechar e abrir*/
-#anim2 > .forme > .buttonX{
+.forme > .buttonX{
     position: absolute;
     right: 2%;
     top: 2%;
@@ -219,28 +222,28 @@ body{
     height: 35px;
     cursor: pointer;
 }
-#anim2 > .forme > .text-form{
+.forme > .text-form{
     padding: 15px;
     margin-bottom: 6%;
     text-align: center;
 }
-#anim2 > .forme > .text-form > h1{
+.forme > .text-form > h1{
     margin-bottom: 15px;
 }
-#anim2 > .forme > form{
+.forme > form{
     display: flex;
     flex-flow: column;
 }
-#anim2 > .forme > form > p {
+.forme > form > p {
     margin-bottom: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#anim2 > .forme > form > button{
+.forme > form > button{
     width: 150px;
     height: 40px;
     align-self: center;    
 }
-#anim2 > .forme > form > button > input{
+.forme > form > button > input{
     cursor: pointer;
     width: 140px;
     height: 30px;
