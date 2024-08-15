@@ -120,6 +120,7 @@ body{
 }
 #anim2 > article > button{
     width: 34%;
+    height: 70px;
     padding: 4px;
     margin-top: 10px;
     border-radius: 5px;
