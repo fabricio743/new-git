@@ -57,12 +57,13 @@ body{
     width: 800px;
     padding: 13px;
     margin-top: 2%;
-    background-color: rgba(255, 255, 255, 0.632);
+    background-color: rgba(255, 255, 255, 0.764);
     border-radius: 15px 15px 0px 15px;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.119);
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 320;
     font-size: 28px;
+    
 
 }
 /* Parte 1 pronta para celular*/
@@ -81,6 +82,7 @@ body{
     }
     #info1 > .org-inf > p{
         width: 90%;
+        font-size: 25px;
     }
 }
 
@@ -197,7 +199,7 @@ body{
 /*Aqui é a parte da interatividade do forme*/
 
 .forme{
-    background-color: rgba(255, 255, 255, 0.952);
+    background-color: rgba(255, 209, 25, 0.818);
     position: fixed;
     width: 80%;
     height: 80%;
@@ -209,6 +211,7 @@ body{
     justify-content: center;
     border-radius: 8px;
     display: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.157);
 } 
 /*Botão para fechar e abrir*/
 .forme > .buttonX{
@@ -233,10 +236,20 @@ body{
 .forme > form{
     display: flex;
     flex-flow: column;
+    background-color: #f0cc3db8;
+    width: 80%;
+    text-align: center;
+    padding: 70px 0px;
+    border-radius: 10px;
 }
 .forme > form > p {
     margin-bottom: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.forme > form > p > input{
+    margin-top: 15px;
+    padding: 3px;
+    height: 30px;
 }
 .forme > form > button{
     width: 150px;
