@@ -202,7 +202,7 @@ body{
     background-color: rgba(255, 209, 25, 0.818);
     position: fixed;
     width: 80%;
-    height: 80%;
+    min-height: 70%;
     left: 10%;
     top: 10%;
     display: flex;
@@ -247,7 +247,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .forme > form > p > input{
-    margin-top: 15px;
+    margin: 15px 0px;
     padding: 3px;
     height: 30px;
 }
@@ -262,6 +262,21 @@ body{
     height: 30px;
     border: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media (max-width:1200px) {
+    .forme{
+        width: 90%;   
+        padding: 10px;    
+        left: 5%;
+        top: 10%;
+    } 
+    .forme > form{
+        width: 80%;
+        padding: 10px 0px;
+    }
+    .forme > form > p {
+        margin: 1px;
+    }
 }
 
 
