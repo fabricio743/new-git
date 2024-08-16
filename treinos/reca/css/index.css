@@ -57,7 +57,7 @@ body{
     background-color: #f0cc3db8;
     width: 80%;
     text-align: center;
-    padding: 70px 0px;
+    padding: 75px 0px;
     border-radius: 10px;
 }
 .forme > form > p {
@@ -91,7 +91,7 @@ body{
     } 
     .forme > form{
         width: 80%;
-        padding: 10px 0px;
+        padding: 20px 0px;
     }
     .forme > form > p {
         margin: 1px;
@@ -183,10 +183,10 @@ body{
 }
 #anim2 > article{
     width: 500px;
-    height: 350px;
+    height: 450px;
     display: flex;
     flex-flow: column;
-    margin: 60px 0px;
+    margin: 30px 0px;
 }
 #anim2 > article > div{
     height: 90%;
@@ -225,6 +225,7 @@ body{
     #anim2 > article{
         width: 270px;
         height: 450px;
+        margin: 60px 0px;
     }
     #anim2 > article > div > ul{
         width: 70%;
