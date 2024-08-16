@@ -15,7 +15,88 @@ body{
     width: 100%;
     height: 100%;
 }
-
+/*Aqui é a parte da interatividade do forme*/
+.forme{
+    background-color: rgba(255, 209, 25, 0.818);
+    position: fixed;
+    width: 80%;
+    min-height: 70%;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    display: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.157);
+} 
+/*Botão para fechar e abrir*/
+.forme > .buttonX{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background:url(../img/botao-fechar.png);
+    background-position: center center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.forme > .text-form{
+    padding: 15px;
+    margin-bottom: 6%;
+    text-align: center;
+}
+.forme > .text-form > h1{
+    margin-bottom: 15px;
+}
+.forme > form{
+    display: flex;
+    flex-flow: column;
+    background-color: #f0cc3db8;
+    width: 80%;
+    text-align: center;
+    padding: 70px 0px;
+    border-radius: 10px;
+}
+.forme > form > p {
+    margin-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.forme > form > p > input{
+    margin: 15px 0px;
+    padding: 3px;
+    height: 30px;
+    background-color: white;
+}
+.forme > form > button{
+    width: 150px;
+    height: 40px;
+    align-self: center;    
+}
+.forme > form > button > input{
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media (max-width:1200px) {
+    .forme{
+        width: 90%;   
+        padding: 10px;    
+        left: 3.5%;
+        top: 10%;
+    } 
+    .forme > form{
+        width: 80%;
+        padding: 10px 0px;
+    }
+    .forme > form > p {
+        margin: 1px;
+    }
+}
 /*Parte1*/
 #info1{
     width: 100%;
@@ -46,7 +127,7 @@ body{
     padding: 0px 15px;
 }
 #info1 > .org-inf > a{
-    margin-top: 3%;
+    margin-top: 10%;
 }
 #info1 > .org-inf > a > img{
     width: 400px;
@@ -81,11 +162,15 @@ body{
         margin-bottom: 10%;
     }
     #info1 > .org-inf > p{
-        width: 90%;
-        font-size: 25px;
+        width: 80%;
+        font-size: 24px;
     }
 }
-
+@media (max-width: 650px)  {
+    #info1 > .org-inf > p{
+        font-size: 20px;
+    }
+}
 /*Parte 2*/
 #anim2{
     display: flex;
@@ -101,7 +186,7 @@ body{
     height: 350px;
     display: flex;
     flex-flow: column;
-    margin-bottom: 60px;
+    margin: 60px 0px;
 }
 #anim2 > article > div{
     height: 90%;
@@ -126,13 +211,13 @@ body{
     border-radius: 5px;
     align-self: center;
     background-color: rgba(245, 222, 179, 0.735);
+    font-size: 22px;
 }
 #anim2 > article > button:hover{
     background-color: rgba(0, 0, 0, 0.648);
     color: white;
 }
-
-/*Versão para celular*/
+/*Versão para celular parte 2*/
 @media (max-width: 700px) {
     #anim2{
         padding: 3% 0%;
@@ -145,7 +230,9 @@ body{
         width: 70%;
     }
     #anim2 > article > button{
-        width: 90%;
+        width: 80%;
+        height: 50px;
+        font-size: 22px;
     }
 }
 #dog1{
@@ -196,91 +283,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
 }
-
-/*Aqui é a parte da interatividade do forme*/
-
-.forme{
-    background-color: rgba(255, 209, 25, 0.818);
-    position: fixed;
-    width: 80%;
-    min-height: 70%;
-    left: 10%;
-    top: 10%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    display: none;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.157);
-} 
-/*Botão para fechar e abrir*/
-.forme > .buttonX{
-    position: absolute;
-    right: 2%;
-    top: 2%;
-    background:url(../img/botao-fechar.png);
-    background-position: center center;
-    background-size: contain;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-}
-.forme > .text-form{
-    padding: 15px;
-    margin-bottom: 6%;
-    text-align: center;
-}
-.forme > .text-form > h1{
-    margin-bottom: 15px;
-}
-.forme > form{
-    display: flex;
-    flex-flow: column;
-    background-color: #f0cc3db8;
-    width: 80%;
-    text-align: center;
-    padding: 70px 0px;
-    border-radius: 10px;
-}
-.forme > form > p {
-    margin-bottom: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.forme > form > p > input{
-    margin: 15px 0px;
-    padding: 3px;
-    height: 30px;
-}
-.forme > form > button{
-    width: 150px;
-    height: 40px;
-    align-self: center;    
-}
-.forme > form > button > input{
-    cursor: pointer;
-    width: 140px;
-    height: 30px;
-    border: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-@media (max-width:1200px) {
-    .forme{
-        width: 90%;   
-        padding: 10px;    
-        left: 5%;
-        top: 10%;
-    } 
-    .forme > form{
-        width: 80%;
-        padding: 10px 0px;
-    }
-    .forme > form > p {
-        margin: 1px;
-    }
-}
-
-
+/*Parte 3*/
 #maps3{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.26);
